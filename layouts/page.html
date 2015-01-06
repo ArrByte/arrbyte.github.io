@@ -3,16 +3,20 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
   <h1><img src="assets/logo_text_250x250.png" alt="ArrByte Games"></h1>
-  <!--nav>
+  <nav>
     <ul>
-      <li><a href='index.html'>Home</a></li>
       <li><a href='games.html'>Games</a></li>
+      <li><a href='wip.html'>Previews</a></li>
+      <li><a href='contribute.html'>Contribute</a></li>
     </ul>
-  </nav-->
-  <h1>{{title}}</h1>
-  <section id="main">{{contents}}</section>
+  </nav>
+  <section id="main">
+    <h2>{{title}}</h2>
+    {{contents}}
+  </section>
 </body>
 </html>
