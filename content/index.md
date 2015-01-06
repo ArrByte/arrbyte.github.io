@@ -1,6 +1,5 @@
 {
-  "title": "ArrByte Games"
+  "title": "Coming soon"
 }
 ---
 
-Hello, world.
