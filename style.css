@@ -110,3 +110,24 @@ nav ul {
     font-size: 1.6em;
   }
 }
+
+@media(max-width: 30em) {
+  nav ul {
+    position: relative;
+    margin: 0;
+    top: 128px;
+    list-style: none;
+    padding: 0;
+  }
+
+  #main {
+    position: relative;
+    left: 0;
+    top:  0;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+}
