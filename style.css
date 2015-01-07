@@ -11,6 +11,8 @@
     font-style: normal;
 }
 
+/** General styles **/
+
 html, body {
   padding: 0;
   margin: 0;
@@ -40,6 +42,12 @@ h1 {
   margin: 0;
 }
 
+a, a:visited {
+  color: #be0000;
+}
+
+/** Sections **/
+
 header {
   clear: both;
   height: 200px;
@@ -59,21 +67,46 @@ header {
   bottom: 0;
 }
 
-a, a:visited {
-  color: #be0000;
-}
+/** Navigation **/
 
 nav ul {
-  position: relative;
   margin: 0;
-  top: 162px;
 }
 
-nav li {
-  display: inline-block;
-  margin: 0 1em;
+/** Media specific styles **/
+
+@media(min-width: 55em) {
+  nav ul {
+    position: relative;
+    margin: 0;
+    top: 162px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 0 1em;
+  }
+
+  nav a {
+    font-size: 1.6em;
+  }
 }
 
-nav a {
-  font-size: 1.6em;
+@media(max-width: 55em) and (min-width: 30em) {
+  nav ul {
+    position: relative;
+    margin: 0;
+    top: 88px;
+    list-style: none;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0;
+    padding-left: 210px;
+  }
+
+  nav a {
+    font-size: 1.6em;
+  }
 }
